@@ -23,147 +23,112 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 # PROGRAM :
-boot.html
 ```
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dribbble Clone</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Styles (optional) -->
-    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body style="background-color:rgb(220, 174, 150)">
+<body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Dribbble Clone</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inspiration</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Learn</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inspiration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="#">Sign Up</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-light text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Discover the World's Top Designers & Creatives</h1>
-            <p class="lead">Join the community to showcase your work, find inspiration, and connect with designers.</p>
-            <a href="#" class="btn btn-primary btn-lg">Join Us Today</a>
+    <header class="bg-danger py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Discover the World's Top Designers & Creative Work</h1>
+            <p class="lead mt-3">Explore portfolios, get inspired, and showcase your own creative projects.</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Get Started</a>
         </div>
     </header>
 
-    <!-- Featured Content Section -->
-    <section class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="C:\Users\admin\Downloads\uiiii.jpg" class="card-img-top" alt="Sample Design 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Design Concept 1</h5>
-                        <p class="card-text">User Interface (UI) Design is the process of designing the visual layout
-                             and interactive elements of digital products, such as websites, mobile apps, software, 
-                             and other digital interfaces. UI design focuses on how users interact with a product and 
-                             aims to create a visually appealing, intuitive, and efficient experience. It includes everything 
-                             from buttons, icons, color schemes, and typography to spacing, navigation, and overall layout.A beautiful UI design
-                              concept to inspire your next project.</p>
-                        <a href="#" class="btn btn-outline-secondary">View More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="C:\Users\admin\Downloads\port.jpg" class="card-img-top" alt="Sample Design 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Design Concept 2</h5>
-                        <p class="card-text">A portfolio is an essential tool for showcasing your skills, experience, and creativity, 
-                            especially in fields like UI/UX design, web development, graphic design,
-                             and other creative industries. Your portfolio serves as a visual resume, demonstrating your abilities to potential employers, 
-                             clients, or collaborators.Modern and clean design examples for your portfolio.</p>
-                        <a href="#" class="btn btn-outline-secondary">View More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="C:\Users\admin\Downloads\dss.png" class="card-img-top" alt="Sample Design 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Design Concept 3</h5>
-                        <p class="card-text">Creative design is at the heart of any visually impactful project, whether it’s for branding, websites, apps, packaging, 
-                            or marketing campaigns. It’sthe process of transforming ideas and concepts
-                             into engaging visuals that tell a story, evoke emotions, and capture attention.Explore creative UI ideas and concepts for designers.</p>
-                        <a href="#" class="btn btn-outline-secondary">View More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="bg-dark text-white text-center py-5">
+    <!-- Featured Projects -->
+    <section class="py-5">
         <div class="container">
-            <h2>Stay Updated</h2>
-            <p>Sign up for our newsletter to get the latest updates.</p>
-            <form class="row g-2 justify-content-center">
-                <div class="col-md-6">
-                    <input type="email" class="form-control" placeholder="Enter your email">
+            <h2 class="text-center mb-4">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="graptheory.webp" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">graptheory</h5>
+                            <p class="card-text">developers can more easily learn about it.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-auto">
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="nixtio.webp" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">nixtio</h5>
+                            <p class="card-text">We’re Nixtio - your digital experience partner.</p>
+                        </div>
+                    </div>
                 </div>
-            </form>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="lisa.webp" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">lisa</h5>
+                            <p class="card-text">This is the goal of ESA’s future mission.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-4">
-        <div class="container">
-            <p>&copy; 2024 | Designed by JANANI SHREE A</p>
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; Designed and Developed by Harisudhan S</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
 ```
-style.css
-```
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    b
-
-}
-header{
-     background-color: darkkhaki;
-}
-
-.card {
-    transition: transform 0.2s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-```
+        
 
 # OUTPUT:
-![OUT1](https://github.com/user-attachments/assets/e0b487e8-0717-4a31-8046-c81fd3454f4f)
+![image](https://github.com/user-attachments/assets/9b710616-e857-4b9f-b577-438c23451caa)
+
+![image](https://github.com/user-attachments/assets/ee315574-6a17-4753-9927-aa96424617cd)
+
+![image](https://github.com/user-attachments/assets/1af359bd-7c15-48df-8df6-78faf915af74)
+
+
+
 
 # RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
